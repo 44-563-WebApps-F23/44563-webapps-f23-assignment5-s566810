@@ -1,43 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Starter - Lab05_Baddam</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</head>
-<body>
-    <h1>"Visit cities with Sangeetha Baddam"</h1>
+  <head>
+    <title>Bootstrap Starter - Lab05_Baddam</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--navbar-->
     <div class="container">
-        <div class="row">
-            <div class="col-sm-2">B</div>
-            <div class="col-sm-2">A</div>
-            <div class="col-sm-2">D</div>
-            <div class="col-sm-2">D</div>
-            <div class="col-sm-2">A</div>
-            <div class="col-sm-2">M</div>
+      <nav class="navbar navbar-expand-md navbar-light and bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="cities.html">A Few Cities</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="basic.html">BASIC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="advanced.html">ADVANCED</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md">Banglore</div>
-            <div class="col-md">Agra</div>
-            <div class="col-md">Delhi</div>
-            <div class="col-md">Dewas</div>
-            <div class="col-md">Ahmadabad</div>
-            <div class="col-md">Maldives</div>
+      </nav>
+    </div>
+    <br />
+    <div class="container">
+      <h1>"Visit cities with Sangeetha Baddam"</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">B</div>
+        <div class="col-sm-2">A</div>
+        <div class="col-sm-2">D</div>
+        <div class="col-sm-2">D</div>
+        <div class="col-sm-2">A</div>
+        <div class="col-sm-2">M</div>
+      </div>
+      <div class="row">
+        <div class="col-md">Banglore</div>
+        <div class="col-md">Agra</div>
+        <div class="col-md">Delhi</div>
+        <div class="col-md">Dewas</div>
+        <div class="col-md">Ahmadabad</div>
+        <div class="col-md">Maldives</div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      The reason we are getting a break point is because for first row we are
+      setting the items in sm-2 col, so the default size for bootstrap container
+      layout for smaller devices is >= 576px, when the sizes comes below 576px
+      the container layout adjusts to extra small device with the container
+      width of size <=576px. Similarly, for second row we have col-md columns,
+      the max width of col-md is >=768px, when it comes below <=768px the
+      container adjusts to smaller container layout.
+    </div>
+    <br />
+    <!--Image container-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="./images/banglore.jpg" class="img-fluid" alt="banglore" />
         </div>
+        <div class="col">
+          <img src="./images/delhi.jpg" class="img-fluid" alt="delhi" />
+        </div>
+        <div class="col">
+          <img src="./images/maldives.jpg" class="img-fluid" alt="maldives" />
+        </div>
+      </div>
+    </div>
+    <br />
+    <!--Image thumbnail container-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img
+            src="./images/banglore.jpg"
+            class="img-thumbnail"
+            alt="banglore"
+          />
+        </div>
+        <div class="col">
+          <img src="./images/delhi.jpg" class="img-thumbnail" alt="delhi" />
+        </div>
+        <div class="col">
+          <img
+            src="./images/maldives.jpg"
+            class="img-thumbnail"
+            alt="maldives"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <!--Table container-->
+    <div class="container">
+      <h6>Tables with cities, rivers and trees</h6>
+      <table class="table table-dark table-striped">
+        <thead>
+          <tr>
+            <th class="table-danger" scope="col">Letter</th>
+            <th class="table-primary" scope="col">City</th>
+            <th class="table-danger" scope="col">River</th>
+            <th class="table-primary" scope="col">Tree</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row">B</td>
+            <td scope="row">BANGLORE</td>
+            <td scope="row">BEAUFORT</td>
+            <td scope="row">BANANA</td>
+          </tr>
+          <tr>
+            <td class="table-success" scope="row">A</td>
+            <td class="table-info" scope="row">AGRA</td>
+            <td class="table-success" scope="row">AMERICAN FORK</td>
+            <td class="table-info" scope="row">ALDER</td>
+          </tr>
+          <tr>
+            <td scope="row">D</td>
+            <td scope="row">DELHI</td>
+            <td scope="row">DANUBE RIVER</td>
+            <td scope="row">DRAGON</td>
+          </tr>
+          <tr>
+            <td class="table-success" scope="row">D</td>
+            <td class="table-info" scope="row">DEWAS</td>
+            <td class="table-success" scope="row">DOBUS</td>
+            <td class="table-info" scope="row">DOUGLAS</td>
+          </tr>
+          <tr>
+            <td scope="row">A</td>
+            <td scope="row">AHMADABAD</td>
+            <td scope="row">AMARGOSA</td>
+            <td scope="row">ACACIA</td>
+          </tr>
+          <tr>
+            <td class="table-success" scope="row">M</td>
+            <td class="table-info" scope="row">MALDIVES</td>
+            <td class="table-success" scope="row">MURRAY</td>
+            <td class="table-info" scope="row">MANGO</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--buttons-->
+    <div class="container">
+      <button class="btn btn-primary">B</button>
+      <button class="btn btn-success">A</button>
+      <button class="btn btn-secondary">D</button>
+      <button class="btn btn-warning">D</button>
+      <button class="btn btn-info">A</button>
+      <button class="btn btn-dark">M</button>
+    </div>
+    <br />
+    <div class="container">
+      <div
+        class="btn-toolbar"
+        role="toolbar"
+        aria-label="Toolbar with button groups"
+      >
+        <!-- First Button Group -->
+        <div class="btn-group" role="group" aria-label="Success Buttons">
+          <button class="btn btn-success">B</button>
+          <button class="btn btn-success">A</button>
+          <button class="btn btn-success">D</button>
+        </div>
+        <!-- Second Button Group -->
+        <div class="btn-group" role="group" aria-label="Alert Buttons">
+          <button class="btn btn-warning">D</button>
+          <button class="btn btn-warning">A</button>
+        </div>
+        <!-- Third Button Group -->
+        <div class="btn-group" role="group" aria-label="Danger Buttons">
+          <button class="btn btn-danger">M</button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <div class="dropdown">
+        <a
+          class="btn btn-primary dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+          <li>
+            <a class="dropdown-item" href="advanced.html">Advanced Page</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <br>
-    <div class="container">The reason we are getting a break point is because for first row we are setting the items in sm-2 col, so 
-        the default size for bootstrap container layout for smaller devices is >= 576px, when the sizes comes below
-        576px the container layout adjusts to extra small device with the container width of size <=576px.
-        Similarly, for second row we have col-md columns, the max width of col-md is >=768px, when it comes below 
-        <=768px the container adjusts to smaller container layout.
+    <!--HTML Form-->
+    <div class="container">
+      <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label class="form-label">City</label>
+            <input type="text" class="form-control" placeholder="Enter Your City">
+        </div>
+        <br>
+        <div class="form-check">
+            <label class="form-check-label">Sign up for newsletter?</label>
+            <input type="checkbox" class="form-check-input">
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
     </div>
-</body>
+  </body>
 </html>

@@ -1,0 +1,12 @@
+.img-fluid{
+    width: 400px;
+    height: 280px;
+}
+
+.img-thumbnail  {
+    width: 400px;
+    height: 280px;
+}
+td:hover{
+    background-color: aquamarine;
+}
